@@ -1,0 +1,11 @@
+Get:
+curl -u luke:stephen -i http://0.0.0.0:5000/todo/api/v1/tasks
+
+Post:
+curl -u luke:stephen -i -H "Content-Type: application/json" -X POST -d '{"title":"<Content>"}' http://0.0.0.0:5000/todo/api/v1/tasks
+
+Put:
+curl -u luke:stephen -i -H "Content-Type: application/json" -X PUT -d '{"done":true}' http://0.0.0.0:5000/todo/api/v1.0/tasks/<Id>
+
+Delete:
+curl -u luke:stephen -i -X DELETE http://0.0.0.0:5000/todo/api/v1/tasks/<Id>
